@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav>
+        <ul class="navlist">
+            <li>Logo</li>
+            <li>|</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Modal Container -->
+    <div class="container">
+        <div class="forms-container">
+            <div class="signin-signup" id="modal">
+                <span onclick="closeModal()" class="close-button" id="close-button">&times;</span>
+                <!-- Registration Form -->
+                <form action="" class="sign-in-form">
+                    <h2 class="title">Register</h2>
+
+                    <!-- Username input field -->
+                    <div class="input-field">
+                        <input type="text" placeholder="Username" />
+                        <ion-icon name="person-outline"></ion-icon>
+                    </div>
+
+                    <!-- Email input field -->
+                    <div class="input-field">
+                        <input type="email" placeholder="Email" />
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </div>
+
+                    <!-- Password input field -->
+                    <div class="input-field">
+                        <input type="password" placeholder="Password" />
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                    </div>
+
+                    <!-- Submit button -->
+                    <button type="submit">Register</button>
+
+                    <!-- Already have an account link -->
+                    <div class="sub-title">
+                        Already have an account?  
+                        <a href="login.html">Login</a> 
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

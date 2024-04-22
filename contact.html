@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <nav>
+            <ul class="navlist">
+                <li>Logo</li>
+                <li>|</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <div class="forms-container">
+                <div class="signin-signup" id="modal">
+                    <span onclick="closeModal()" class="close-button" id="close-button">&times;</span>
+                    <form action="" class="sign-in-form">
+                        <h2 class="title">Contact Us</h2>
+
+                        <!-- Name Input Field -->
+                        <div class="input-field">
+                            <input type="text" placeholder="Your Name" required />
+                            <ion-icon name="person-outline"></ion-icon>
+                        </div>
+
+                        <!-- Email Input Field -->
+                        <div class="input-field">
+                            <input type="email" placeholder="Your Email" required />
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+
+                        <!-- Subject Input Field -->
+                        <div class="input-field">
+                            <input type="text" placeholder="Subject" required />
+                            <ion-icon name="chatbubbles-outline"></ion-icon>
+                        </div>
+                        <div class="input-field">
+                            <textarea name="" id="message" cols="30" rows="20" placeholder="Input your message"></textarea>
+                            <ion-icon name="chatbubbles-outline"></ion-icon>
+                        </div>
+                        <!-- Phone Input Field (optional) -->
+                        <div class="input-field">
+                            <input type="tel" placeholder="Your Phone Number" pattern="\d{10}" />
+                            <ion-icon name="call-outline"></ion-icon>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

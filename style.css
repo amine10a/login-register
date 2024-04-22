@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+.navlist {
+    display: block;
+    color: black;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: .2s;
+
+}
+.navlist >li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.navlist >li:last-child {
+    margin-right: 0;
+}
+.navlist >li a {
+    text-decoration: none;
+    color: #333;
+    padding: 12px;
+    border-radius: 5px;
+    transition: background-color 1.3s ;
+
+
+}
+.navlist >li >a:hover {
+    background-color: #ce244c;
+    display: subgrid;
+    
+    
+}
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body,
+input {
+font-family: "Poppins", sans-serif;
+
+}
+
+.container {
+position: relative;
+width: 100%;
+background-color: #fff;
+min-height: 100vh;
+overflow: hidden;
+align-items: center;
+
+}
+
+.forms-container {
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+
+}
+
+.signin-signup {
+position: absolute;
+top: 50%;
+transform: translate(-50%, -50%);
+left: 50%;
+width: 50%;
+transition: 1s 0.7s ease-in-out;
+display: grid;
+grid-template-columns: 1fr;
+z-index:1 ;
+padding: 20px; /* Padding around form */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Drop shadow */
+}
+
+form {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+padding: 0rem 5rem;
+transition: all 0.2s 0.7s;
+overflow: hidden;
+grid-column: 1 / 2;
+grid-row: 1 / 2;
+}
+
+form.sign-up-form {
+opacity: 0;
+z-index: 1;
+}
+
+form.sign-in-form {
+z-index: 2;
+}
+
+.title {
+font-size: 2.2rem;
+color: #444;
+margin-bottom: 10px;
+}
+.sub-title {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 10px;
+    }
+.input-field {
+max-width: 380px;
+width: 100%;
+background-color: #f0f0f0;
+margin: 10px 0;
+height: 55px;
+border-radius: 55px;
+display: grid;
+grid-template-columns: 90% 10%;
+padding: 0 0.4rem;
+position: relative;
+}
+
+
+.input-field input {
+background: none;
+outline: none;
+border: none;
+line-height: 1;
+font-weight: 600;
+font-size: 1.1rem;
+color: #333;
+
+}
+
+.input-field input::placeholder {
+color: #aaa;
+font-weight: 500;
+}
+
+form button[type="submit"] {
+    background-color: #eaeaea; 
+    color: black;
+    padding: 10px 20px; /* Padding around the text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Font weight */
+    text-align: center; /* Center the text */
+    display: inline-block; /* Display as inline-block */
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+}
+
+/* Add hover effect to the submit button */
+form button[type="submit"]:hover {
+    background-color: #af514c; /* Darker green on hover */
+}
+.close-button {
+    position: absolute; /* Position relative to the modal content */
+    top: 10px; /* Space from the top */
+    right: 10px; /* Space from the right */
+    font-size: 24px; /* Font size of the close button */
+    cursor: pointer; /* Pointer cursor */
+}
+/* General styles remain unchanged */
+
+.navlist {
+    display: flex; /* Change display to flex */
+    justify-content: space-between; /* Space between nav items */
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: 0.2s;
+    background-color: #fff; /* Background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.navlist > li {
+    margin: 0 10px; /* Add margin between list items */
+}
+
+/* For medium screens (600px to 1200px) */
+@media (max-width: 1200px) and (min-width: 601px) {
+    /* Adjust styles as needed for medium screens */
+    .container {
+        padding: 0 20px; /* Add padding to container */
+    }
+
+    .signin-signup {
+        width: 60%; /* Adjust the width */
+    }
+    
+    /* Other styles as needed */
+}
+
+/* For small screens (up to 600px) */
+@media (max-width: 600px) {
+    /* Adjust styles as needed for small screens */
+    .navlist {
+        flex-direction: column; /* Change direction to column */
+        align-items: flex-start; /* Align items to the left */
+        padding: 10px;
+    }
+    
+    .navlist > li {
+        margin-bottom: 10px; /* Add margin between list items */
+    }
+
+    /* Forms adjustments */
+    .signin-signup {
+        width: 90%; /* Full width for smaller screens */
+        padding: 20px; /* Add padding */
+    }
+    
+    /* Input fields and button */
+    .input-field,
+    form button[type="submit"] {
+        width: 100%; /* Full width */
+    }
+    
+    /* Adjust close button */
+    .close-button {
+        top: 5px;
+        right: 5px;
+    }
+    
+    /* Adjust other elements as needed */
+}
+form .input-field input, form .input-field textarea {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+form .input-field input::placeholder, form .input-field textarea::placeholder {
+    color: #aaa;
+    font-weight: 500;
+}
+
+form #message {
+    max-width: 100%;
+    width: 100%;
+    height: auto; /* Adjust the height as needed */
+    min-height: 100px; /* Minimum height for the textarea */
+    padding: 10px; /* Add padding for comfort */
+    border-radius: 8px; /* Rounded corners */
+    resize: vertical; /* Allow vertical resizing */
+    font-size: 1.1rem; /* Match other input fields */
+    /*box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Light inset shadow */
+}
